@@ -1,0 +1,24 @@
+[user]
+  name   = Ander Suarez
+  email  = me@andersuarez.com
+[github]
+  user   = xpander001
+[alias]
+  a       = add
+  ca      = commit -a
+  cam     = commit -am
+  cm      = commit -m
+  s       = status
+  pom     = push origin master
+  pog     = push origin gh-pages
+  puom    = pull origin master
+  puog    = pull origin gh-pages
+  cob     = checkout -b
+  co      = checkout
+  fp      = fetch --prune --all
+  l       = log --oneline --decorate --graph
+  lall    = log --oneline --decorate --graph --all
+  ls      = log --oneline --decorate --graph --stat
+  rh      = reset --hard HEAD
+  unstage = reset --soft HEAD
+  cdiff   = "!git diff $1 $1^"
