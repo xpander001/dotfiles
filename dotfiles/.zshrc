@@ -1,5 +1,17 @@
-# Aliases
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Ruby
+# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+eval "$(rbenv init -)"
+
+# Python
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Aliases
 alias code="\"/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code\""
 alias ch="code .";
 alias cz="code ~/.zshrc";
@@ -41,6 +53,10 @@ alias ypm="echo \"Installing deps without lockfile and ignoring engines\" && yar
 
 ## use hub for git
 alias git=hub
+
+# Common legacy aliases
+alias jestu="npm run test -- --u"
+alias jestw="npm run test -- --watch"
 
 # Custom functions
 mg () { mkdir "$@" && cd "$@" || exit;
