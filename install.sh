@@ -35,6 +35,10 @@ brew install delta
 brew install yarn
 
 # Development languages, version managers and tools
+
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh
+
 brew install yarn
 brew install rbenv
 brew install pyenv
@@ -51,12 +55,22 @@ echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
 echo "Finished installing development and cli apps"
 
 echo "Installing general cask apps"
-brew cask install alfred google-chrome firefox spectacle iterm2 \
+brew cask install alfred google-chrome firefox spectacle iterm2 skype \
 visual-studio-code 1password vlc discord skype workflowy spotify \
 focus dropbox slack handbrake zoomus betterzip avibrazil-rdm postman \
 
-echo "Installing general cask apps"
+echo "Finished installing general cask apps"
 
+echo "Adding dotfiles"
 
+git clone git@github.com:xpander001/dotfiles.git "${HOME}/dotfiles"
+ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
+ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 
+# get bat and delta all configured
+mkdir -p "${HOME}/.config/bat/themes"
+ln -s "${HOME}/dotfiles/.config/bat/config" "${HOME}/.config/bat/config"
+git clone https://github.com/batpigandme/night-owlish "${HOME}/.config/bat/themes/night-owlish"
+bat cache --build
 
+echo "Finished adding dotfiles"
