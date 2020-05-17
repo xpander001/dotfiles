@@ -55,8 +55,8 @@ echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
 echo "Finished installing development and cli apps"
 
 echo "Installing general cask apps"
-brew cask install alfred google-chrome firefox spectacle iterm2 skype \
-visual-studio-code 1password vlc discord skype workflowy spotify \
+brew cask install alfred google-chrome firefox spectacle iterm2 caffeine protonvpn \
+visual-studio-code 1password vlc discord skype workflowy spotify figma staruml \
 focus dropbox slack handbrake zoomus betterzip avibrazil-rdm postman \
 
 echo "Finished installing general cask apps"
@@ -74,3 +74,17 @@ git clone https://github.com/batpigandme/night-owlish "${HOME}/.config/bat/theme
 bat cache --build
 
 echo "Finished adding dotfiles"
+
+printf "TODO:\n\
+install: \n\
+  XCode (App Store) \n\
+  Things (App Store) \n\
+  Fantastical (App Store) \n\
+  Reeder (App Store) \n\
+  Bear (App Store) \n\
+\n\
+Restart Terminal.app\n\
+copy git config from your backup/re-login \n\
+copy .npmrc from your backup/re-login \n\
+login to literally everything \n\
+"
