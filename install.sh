@@ -81,6 +81,7 @@ install: \n\
   Things (App Store) \n\
   Fantastical (App Store) \n\
   Reeder (App Store) \n\
+  Pocket (App Store) \n\
   Bear (App Store) \n\
 \n\
 Restart Terminal.app\n\
