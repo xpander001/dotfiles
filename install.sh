@@ -37,7 +37,7 @@ brew install yarn
 # Development languages, version managers and tools
 
 # Install NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 brew install yarn
 brew install rbenv
